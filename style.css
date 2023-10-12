@@ -1,0 +1,51 @@
+@font-face {
+	font-family: Dassie-DEMO;
+	src: url(font/Dassie\ DEMO.ttf);    
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    background-image: url("assets/imgs/backgroundHeader.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 629px;
+}
+
+.chamada{
+    margin-top: 100px;
+    margin-left: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.texto-1{
+    font-size: 30px;
+}
+
+.texto-2{
+    font-size: 100px;
+    color: #e41218;
+    font-weight: bold;
+}
+
+.texto-3{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+div > div > img{
+    object-fit: contain;
+}
+
+.chamadaGrau{
+    background-color: #f3f3f3;
+}
+
+.grau {
+    color: #e41218;
+    font-size: 50px;
+}
