@@ -3,6 +3,13 @@
 	src: url(font/Dassie\ DEMO.ttf);    
 }
 
+html {
+    box-sizing: border-box;
+}
+    *, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body{
     max-width: 1440px;
     margin: 0 auto;
@@ -16,26 +23,47 @@ header{
     height: 629px;
 }
 
-.chamada{
-    margin-top: 100px;
-    margin-left: 70px;
-    text-align: center;
+/*Deixa os itens do Menu Branco*/
+.nav-link{
+    color: #fff;
     font-weight: bold;
+}
+
+.nav-link:hover{
+    object-fit: contain;
+    color: #fff;
+    box-shadow: inset 0 4px 0 #e41218;
+}
+
+.selecionado{
+    color: #fff;
+    border-top: 3px solid #e41218;
+}
+.chamada{
+    font-weight: bold;
+    margin-top: 70px;
+    margin-left: 300px;
 }
 
 .texto-1{
-    font-size: 30px;
+    font-size: 23px;
+    color: #000;
+    position: relative;
+    top: 65px;
+    left: 180px;
 }
 
 .texto-2{
-    font-size: 100px;
-    color: #e41218;
-    font-weight: bold;
+    font-size: 130px;
+    padding: 0px;
 }
 
 .texto-3{
     font-size: 50px;
-    font-weight: bold;
+    color: #000;
+    position: relative;
+    bottom: 30px;
+    left: 10px;
 }
 
 /*CONTEUDO PRINCIPAL*/
@@ -47,11 +75,72 @@ div > div > img{
     background-color: #f3f3f3;
 }
 
-
-
-.grau{
+h2{
     color: #e41218;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+button{
+    background-color: #000;
+    border-style: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight:bold;
+    padding: 6px 15px 6px 15px;
+    position: relative;
+}
+
+button:hover{
+    background-color: #242323;
+    cursor: pointer;
+}
+.buttonGrau{
+    left: 30px;
+    bottom: 5px;
+}
+
+.buttonSol{
+    left: 30px;
+    bottom: 22px;
+}
+.buttonInfantis{
+    left: 30px;
+    bottom: 5px;
+}
+
+.buttonTech{
+    left: 10px;
+    bottom: 9px;
+    font-size: 25px;
+    padding: 7px 30px 7px 30px;
+}
+
+.boxTech{
+    background-color: #e31016;
+    height: 50%;
+    position: relative;
+    padding: 30px;
+    left: 80px;
+}
+.textoTech-1, .textoTech-2{
+    font-weight: bold;
+}
+
+.textoTech-1{
+    font-size: 25px;
+    color: #000;
+}
+
+.textoTech-2{
+    font-size: 70px;
+    color: #fff;
+    line-height: 60px;
+}
+
+.fundoCinza{
+    background-color: #f3f3f3;
+    width: 85%;
 }
 
 .textoParceiro {
@@ -66,6 +155,7 @@ footer{
 }
 
 /*Altera Primeira Coluna do Footer*/
+
 .textoFooter{
     font-size: 35px;
     color: #fff;
@@ -96,10 +186,6 @@ div > div > div p{
     color: #8e8e8e;
     font-size: 13px;
 }
-/*Deixa os itens do Menu Branco*/
-.nav-link{
-    color: #fff;
-    font-weight: bold;
-}
+
 
 
