@@ -8,35 +8,42 @@
     <title>Oticas Lobão</title>
 </head>
 <body>
-    <header>
-        <div class="container p-0">
-            <div class="row pt-3">
-                <div class="col-5">
-                  <img src="assets/imgs/logoOticaLobao.png">
+    <header id="header">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col p-0">
+                    <img src="assets/imgs/backgroundHeader.png" class="imgMain ">
                 </div>
-                <div class="col-7">
-                    <ul class="nav justify-content-end">
+            </div>
+        </div>
+        <div class="container-fluid p-0 posicaoNav">
+            <nav class="row pt-3 ">
+                <div class="col-5  justify-content-center align-items-center d-flex">
+                  <img src="assets/imgs/logoOticaLobao.png" >
+                </div>
+                <div class="col-7 justify-content-center align-items-center d-flex">
+                    <ul class="nav ">
                         <li class="nav-item">
                           <a class="nav-link selecionado" href="#">home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">sobre nos</a>
+                          <a class="nav-link" href="#Marcas">sobre nos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">produtos</a>
+                          <a class="nav-link" href="#OculosGrau">produtos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link " href="#">serviços</a>
+                          <a class="nav-link " href="#Tecnologia">serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">parceiros</a>
+                            <a class="nav-link " href="#Parceiros">parceiros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">contato</a>
+                            <a class="nav-link " href="#footer">contato</a>
                         </li>
                       </ul>
                 </div>
-            </div>
+            </nav>
             <div class="row justify-content-center">
                 <div class="chamada">
                     <h2 class="texto-1">A SUA</h2>
@@ -47,22 +54,25 @@
         </div>
     </header>
     <main>
-        <div class="container p-0">
-            <div class="row my-4 justify-content-between">
-                <img src="assets/imgs/logo-ray-ban.png" >
-                <img src="assets/imgs/logo-dolce-gabbana.png">
-                <img src="assets/imgs/logo-Calvin-klein.png" >
-                <img src="assets/imgs/logo-carolina-herrera.png">
-                <img src="assets/imgs/logo-guess.png">
-                <img src="assets/imgs/logo-oakley.png">
-                <img src="assets/imgs/logo-police.png" >
-                <img src="assets/imgs/logo-ana-hickmann.png">
+        <section id="Marcas">
+            <div class="container p-0">
+                <div class="row my-4 justify-content-between">
+                    <img src="assets/imgs/logo-ray-ban.png" >
+                    <img src="assets/imgs/logo-dolce-gabbana.png">
+                    <img src="assets/imgs/logo-Calvin-klein.png" >
+                    <img src="assets/imgs/logo-carolina-herrera.png">
+                    <img src="assets/imgs/logo-guess.png">
+                    <img src="assets/imgs/logo-oakley.png">
+                    <img src="assets/imgs/logo-police.png" >
+                    <img src="assets/imgs/logo-ana-hickmann.png">
+                </div>
             </div>
-        </div>
+        </section>
+       <section id="OculosGrau">
         <div class="container-fluid">
             <div class="row fundo">
                 <div class="col p-0">
-                    <img src="assets/imgs/backgroundOculosDeGrau.png">
+                    <img src="assets/imgs/backgroundOculosDeGrau.png" class="imgMain">
                 </div>
                 <div class="col p-0 d-flex flex-column align-items-center justify-content-center text-left ">
                     <h2>óculos <br> de grau </h2>
@@ -70,6 +80,8 @@
                 </div>
             </div>
         </div>
+       </section>
+       <section id="OculosSol">
         <div class="container-fluid">
             <div class="row fundo">
                 <div class="col p-0 d-flex flex-column align-items-center justify-content-center">
@@ -77,14 +89,16 @@
                     <button class="buttonSol">Conheça o cátalogo</button>
                 </div>
                 <div class="col p-0">
-                    <img src="assets/imgs/backgroundSol.png">
+                    <img src="assets/imgs/backgroundSol.png" class="imgMain">
                 </div>
             </div>
         </div>
+       </section>
+       <section id="OculosInfantis">
         <div class="container-fluid">
             <div class="row fundo">
                 <div class="col p-0">
-                    <img src="assets/imgs/backgroundInfantis1.png">
+                    <img src="assets/imgs/backgroundInfantis1.png" class="imgMain">
                 </div>
                 <div class="col p-0 d-flex flex-column align-items-center justify-content-center">
                     <h2>óculos <br> infantis </h2>
@@ -92,22 +106,22 @@
                 </div>
             </div>
         </div>
+       </section>
+       <section id="Tecnologia">
         <div class="container">
             <div class="row">
                 <div class="col p-0 d-flex align-items-center justify-content-center">
                     <div class="boxTech">
                         <h2 class="textoTech-1">Cuidados para visão</h2>
-                        <h2 class="textoTech-2" >alta tecnologia</h2>
+                        <h2 class="textoTech-2" >alta <br>tecnologia</h2>
                         <button class="buttonTech">Nossos serviços</button>
-
                     </div>
-
                     <img src="assets/imgs/backgroundTech.png">
-
                 </div>
-               
             </div>
         </div>
+       </section>
+       <section id="Parceiros">
         <div class="container">
             <div class="row fundoCinza d-flex align-items-center justify-content-start">
                <p class="textoParceiro">Parceiros</p>
@@ -116,8 +130,10 @@
                <img src="assets/imgs/varilux-logo.png" class="py-4 mx-5">
             </div>
         </div>
+       </section>
+        
     </main>
-    <footer >
+    <footer id="footer">
         <div class="container">
             <div class="row py-5">
                 <div class="col-3 p-0 ">
@@ -129,16 +145,16 @@
                           <a class="nav-link py-1" href="#">home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link py-1" href="#">sobre nós</a>
+                          <a class="nav-link py-1" href="#Marcas">sobre nós</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link py-1" href="#">produtos</a>
+                          <a class="nav-link py-1" href="#OculosGrau">produtos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link py-1" href="#">serviços</a>
+                          <a class="nav-link py-1" href="#Tecnologia">serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link py-1" href="#">contato</a>
+                            <a class="nav-link py-1" href="#footer">contato</a>
                           </li>
                       </ul>
                 </div>
