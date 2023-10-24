@@ -11,6 +11,35 @@ body{
     overflow-x: hidden;
 }
 
+.fundo{
+    background-color: #f3f3f3;
+}
+
+.img-main{
+    width: 100%;
+}
+
+h2{
+    color: #e41218;
+    font-size: 110px;
+    font-weight: bold;
+    line-height: 90px;
+}
+
+button{
+    background-color: #000;
+    border-style: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight:bold;
+    padding: 12px 30px 12px 30px;
+    position: relative;
+}
+
+button:hover{
+    background-color: #242323;
+    cursor: pointer;
+}
 
 /*NAVBAR*/
 .nav-position{
@@ -75,70 +104,42 @@ body{
     position: relative;
     bottom: 50px;
     left: 15px;
+    line-height:normal;
+
 }
 
 /*CONTEUDO PRINCIPAL*/
-div > div > img{
+
+/*MARCAS*/
+.img-marcas{
     object-fit: contain;
 }
 
-.fundo{
-    background-color: #f3f3f3;
+/*SEÇÃO OCULOS DE GRAU*/
+.button-grau{
+    left: 40px;
 }
 
-.imgMain{
-    width: 100%;
-}
-
-
-.imgMarcas{
-    object-fit: contain;
-
-}
-
-h2{
-    color: #e41218;
-    font-size: 110px;
-    font-weight: bold;
-    line-height: 75px;
-}
-
-button{
-    background-color: #000;
-    border-style: none;
-    color: #fff;
-    font-size: 15px;
-    font-weight:bold;
-    padding: 12px 30px 12px 30px;
-    position: relative;
-}
-
-button:hover{
-    background-color: #242323;
-    cursor: pointer;
-}
-.buttonGrau{
+/*SEÇÃO OCULOS DE SOL*/
+.button-sol{
     left: 30px;
-    top: 10px;
+    bottom: 16px;
 }
 
-.buttonSol{
-    left: 30px;
-    bottom: 10px;
-}
-.buttonInfantis{
+/*SEÇÃO OCULOS INFANTIS*/
+.button-infantis{
     left: 60px;
-    top: 10px;
 }
 
-.buttonTech{
+/*SEÇÃO TECNOLOGIA*/
+.button-tech{
     position: absolute;
     left: 37px;
     top: 150px;
-    font-size: 23px;
+    font-size: 1.2rem;
 }
 
-.boxTech{
+.box-tech{
     background-color: #e31016;
     height: 50%;
     height: auto;
@@ -150,35 +151,37 @@ button:hover{
     flex-direction: column;
 }
 
-.textoTech-1, .textoTech-2{
+.texto-tech-1, .texto-tech-2{
     font-weight: bold;
 }
 
-.textoTech-1{
-    font-size: 22px;
+.texto-tech-1{
+    letter-spacing: -1px;
+    font-size: 1.2rem;
     color: #000;
     padding: 0;
     margin: 0;
     line-height: 40px;
 }
 
-.textoTech-2{
-    font-size: 55px;
+.texto-tech-2{
+    font-size: 3rem;
     color: #fff;
     line-height: 40px;
 }
 
-.fundoCinza{
-    background-color: #f3f3f3;
+/*SEÇÃO PARCEIROS*/
+
+#Parceiros .fundo{
     width: 85%;
 }
 
-.imgParceiros{
+.img-parceiros{
     width:17%;
     height: auto;
 }
-.textoParceiro {
-    font-size: 25px;
+.text-parceiro {
+    font-size: 1.4rem;
     font-weight: bold;
     margin: 10px 0 0 80px;
 }
@@ -190,15 +193,15 @@ footer{
 
 /*Altera Primeira Coluna do Footer*/
 
-.textoFooter{
-    font-size: 35px;
+.text-footer{
+    font-size: 2.2rem;
+    letter-spacing: -1px;
     color: #fff;
     font-weight: bold;
 }
 
-div > div > div > p  > span {
+.text-footer span {
     color: #e41218;
-    font-weight: bold;
 }
 
 /*Deixa todos so Paragrafos Branco*/
@@ -206,7 +209,7 @@ div > div > div p{
     color: #fff;
 }
 
-.numeroTelefone{
+.numero-telefone{
     color: #e41218;
     font-size: 14px;
     font-weight: bold;
@@ -223,13 +226,13 @@ div > div > div p{
 
 
 @media screen and (max-width: 480px) { 
-    .imgMarcas{
+    .img-marcas{
         display: flex;
         flex-direction: column;
         margin-top: 10px;
     }
 
-    .logoHeader{
+    .logo-header{
         display: none;
     }
 }
