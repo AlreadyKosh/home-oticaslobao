@@ -16,12 +16,12 @@ body{
 }
 
 .img-main{
-    width: 100%;
+    width: 100%; 
 }
 
 h2{
     color: #e41218;
-    font-size: 110px;
+    font-size: 7rem;
     font-weight: bold;
     line-height: 90px;
 }
@@ -53,7 +53,6 @@ button:hover{
 }
 
 .nav-link:hover{
-    object-fit: contain;
     color: #fff;
     box-shadow: inset 0 4px 0 #e41218;
 }
@@ -211,28 +210,168 @@ div > div > div p{
 
 .numero-telefone{
     color: #e41218;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
 }
 .unidade{
-    font-size: 17px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 .localizacao{
     color: #8e8e8e;
-    font-size: 13px;
+    font-size: 0.9rem;
 }
 
 
 @media screen and (max-width: 480px) { 
-    .img-marcas{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
+
+    h2{
+        text-align: center;
+        margin: 70px 0 70px 0;
+        letter-spacing: -3px;
+        font-size: 6rem;
+    }
+    
+    .img-main{
+        width:100%
     }
 
-    .logo-header{
+    /*NAVBAR*/
+    .logo-nav{
         display: none;
     }
+
+    .nav-link{
+        font-size: 0.8rem;
+        padding: 8px 5px 8px 5px;
+    }
+    
+    
+    /*HEADER*/
+    #header{
+        height: 40vh
+    }
+
+    .call{
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    .text-1{
+        font-size: 1.3rem;
+        top: 50px;
+        left: 90px;
+    }
+    
+    .text-2{
+        font-size: 5rem;
+        position: relative;
+        bottom: 50px;
+        left: 50px;
+        line-height:normal;
+        letter-spacing: -7px;
+    }
+    
+    .text-3{
+        font-size: 1.5rem;
+        color: #000;
+        bottom: 140px;
+        left: 70px;    
+    }
+
+    /*MARCAS*/
+    .marcas-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+
+    .img-marcas{
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    /*OCULOS GRAU*/
+
+
+    .button-grau{
+        bottom: 70px;
+    }
+    /*OCULOS SOL*/
+
+    .button-sol{
+        bottom: 80px;
+    }
+    /*OCULOS INFANTIS*/
+
+    #Oculos-Infantis .container-fluid .row{
+        margin: 0;
+    }
+
+    .button-infantis{
+        bottom: 70px;
+    }
+
+    /*TECH*/
+    .button-tech{
+        position: absolute;
+        left: 18px;
+        top: 130px;
+        font-size: 1.2rem;
+    }
+    
+    .box-tech{
+        background-color: #e31016;
+        position: absolute;
+        top: 260px;
+        left: 75px;     
+        padding: 10px;   
+    }
+    
+    .texto-tech-1, .texto-tech-2{
+        font-weight: bold;
+    }
+    
+    .texto-tech-2{
+        font-size: 3rem;
+        color: #fff;
+        margin: 0;
+    }
+
+    /*PARCEIROS*/
+    
+    #Parceiros .fundo, #Parceiros .container{
+        width: 100%;
+        margin: 200px 0 0 0;
+        padding: 0;
+    }
+
+    .img-parceiros{
+        width:35%;
+        height: auto;
+    }
+
+    .text-parceiro {
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin: 30px 0 0 0px;
+    }
+
+    /*FOOTER*/
+    .numero-telefone{
+        font-size: 0.8rem;
+    }
+
+    .unidade{
+        font-size: 0.9rem;
+    }
+
+    .localizacao{
+        font-size: 0.7rem;
+    }
+
+   
 }
