@@ -62,7 +62,7 @@ button:hover{
 
 #header{
     height: 89vh;
-    background-image: url(assets/imgs/backgroundHeader.png);
+    background-image: url(../imgs/backgroundHeader.png);
     background-repeat: no-repeat;
     background-size:100% 100%
 }
@@ -225,12 +225,15 @@ div > div > div p{
 
 
 @media screen and (max-width: 480px) { 
-
     h2{
         text-align: center;
         margin: 70px 0 70px 0;
         letter-spacing: -3px;
         font-size: 6rem;
+    }
+    main{
+        overflow-x: hidden;
+
     }
     
     .img-main{
@@ -282,11 +285,9 @@ div > div > div p{
 
     /*MARCAS*/
     .marcas-container{
-        width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        margin-left: 5px;
     }
 
     .img-marcas{
