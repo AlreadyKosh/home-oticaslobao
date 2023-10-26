@@ -182,7 +182,7 @@ button:hover{
 .text-parceiro {
     font-size: 1.4rem;
     font-weight: bold;
-    margin: 10px 0 0 80px;
+    margin: 10px 0 0 0px;
 }
 
 /*FOOTER*/
@@ -224,7 +224,7 @@ div > div > div p{
 }
 
 
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 768px) { 
     h2{
         text-align: center;
         margin: 70px 0 70px 0;
@@ -285,14 +285,16 @@ div > div > div p{
 
     /*MARCAS*/
     .marcas-container{
-        height: 100vh;
-        display: flex;
         flex-direction: column;
+        height: 100vh;
     }
 
     .img-marcas{
         margin-top: 20px;
         padding: 0px;
+        width: 100%;
+        height: 4%;
+       
     }
 
     /*OCULOS GRAU*/
@@ -327,8 +329,9 @@ div > div > div p{
     .box-tech{
         background-color: #e31016;
         position: absolute;
-        top: 260px;
-        left: 75px;     
+        top: 50%;
+        left: 50%;    
+        translate: -50% 70% ; 
         padding: 10px;   
     }
     
@@ -346,7 +349,7 @@ div > div > div p{
     
     #Parceiros .fundo, #Parceiros .container{
         width: 100%;
-        margin: 200px 0 0 0;
+        margin-top: 200px;
         padding: 0;
     }
 
@@ -373,6 +376,32 @@ div > div > div p{
     .localizacao{
         font-size: 0.7rem;
     }
+}
 
-   
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    h2{
+        margin:50px;
+    }
+
+    #header h2{
+        margin: 0;
+    }
+    .box-tech h2{
+        margin: 0;
+    }
+
+    /*OCULOS GRAU*/
+    .button-grau{
+        bottom: 40px;
+    }
+    /*OCULOS SOL*/
+
+    .button-sol{
+        bottom: 60px;
+    }
+    /*OCULOS INFANTIS*/
+    .button-infantis{
+        bottom: 40px;
+    }  
 }
