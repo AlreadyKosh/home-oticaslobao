@@ -104,7 +104,6 @@ button:hover{
     bottom: 50px;
     left: 15px;
     line-height:normal;
-
 }
 
 /*CONTEUDO PRINCIPAL*/
@@ -298,8 +297,6 @@ div > div > div p{
     }
 
     /*OCULOS GRAU*/
-
-
     .button-grau{
         bottom: 70px;
     }
@@ -379,16 +376,52 @@ div > div > div p{
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
     h2{
         margin:50px;
     }
 
+    /*HEADER*/
     #header h2{
         margin: 0;
     }
+    
+    .call{
+        left: 120px;
+    }
+
+    .text-1{
+        font-size: 1.5rem;
+        left: 180px;
+        top: 50px;
+    }
+    
+    .text-2{
+        font-size: 8rem;
+    }
+    
+    .text-3{
+        font-size: 2.2rem;
+        bottom: 35px;
+        left: 10px;
+    }
+
+    /*TECH*/
     .box-tech h2{
         margin: 0;
+    }
+
+    .texto-tech-1{
+        font-size: 1.1rem;
+    }
+    
+    .texto-tech-2{
+        font-size: 2.3rem;
+
+    }
+
+    .button-tech{
+        font-size: 1rem;
     }
 
     /*OCULOS GRAU*/
